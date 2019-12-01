@@ -28,4 +28,5 @@ args = parse_args()
 list_path = resolve_args(args)
 content = get_file_list(list_path)
 
-print(random.choice(content))
+for option in random.choices(content, k=3):
+	print(option)
